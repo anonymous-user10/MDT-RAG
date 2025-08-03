@@ -1,0 +1,94 @@
+{
+  "Clinical manifestations": [
+    "{head} exhibits {tail}",
+    "{head} does not exhibit {tail}"
+  ],
+  "Treatment medications": [
+    "{tail} is prescribed for {head}",
+    "{tail} is not prescribed for {head}"
+  ],
+  "Dosage and administration": [
+    "The dosage regimen for {head} is {tail}",
+    "There is no established dosage regimen of {tail} for {head}"
+  ],
+  "Treatment plan": [
+    "{head}'s treatment plan includes {tail}",
+    "{head}'s treatment plan does not include {tail}"
+  ],
+  "Contraindicated medications": [
+    "{head} should avoid {tail}",
+    "{head} can safely take {tail}"
+  ],
+  "Basic information": [
+    "{head}'s {relation} is {tail}",
+    "{head}'s {relation} is not {tail}"
+  ],
+  "Recommended department": [
+    "{head} should be referred to the {tail} department",
+    "{head} does not require referral to the {tail} department"
+  ],
+  "Diagnostic tests": [
+    "{head} requires {tail} testing",
+    "{head} does not require {tail} testing"
+  ],
+  "Family history": [
+    "{head} has a family history of {tail}",
+    "{head} has no family history of {tail}"
+  ],
+  "Travel history": [
+    "{head} has recent travel to {tail}",
+    "{head} has no recent travel to {tail}"
+  ],
+  "Medication history": [
+    "{head} has previously taken {tail}",
+    "{head} has never taken {tail}"
+  ],
+  "Past treatment history": [
+    "{head} received prior treatment with {tail}",
+    "{head} has never received treatment with {tail}"
+  ],
+  "Imaging characteristics": [
+    "Imaging of {head} shows {tail}",
+    "Imaging of {head} shows no evidence of {tail}"
+  ],
+  "Diagnostic test results": [
+    "{head} test results show {tail}",
+    "{head} test results show no signs of {tail}"
+  ],
+  "Duration of symptoms": [
+    "{head} has experienced symptoms for {tail}",
+    "{head} has not experienced prolonged symptoms ({tail})"
+  ],
+  "Complications": [
+    "{head} developed complications including {tail}",
+    "{head} has not developed {tail} complications"
+  ],
+  "Changes in appetite": [
+    "{head} reports changes in appetite: {tail}",
+    "{head} reports no changes in appetite"
+  ],
+  "Changes in sleep quality": [
+    "{head} reports changes in sleep pattern: {tail}",
+    "{head} reports no changes in sleep pattern"
+  ],
+  "Changes in weight": [
+    "{head} has experienced weight changes: {tail}",
+    "{head} has not experienced significant weight changes"
+  ],
+  "Allergic status": [
+    "{head} has allergies to {tail}",
+    "{head} has no known allergies to {tail}"
+  ],
+  "Substance use": [
+    "{head} uses {tail}",
+    "{head} does not use {tail}"
+  ],
+  "Treatment response": [
+    "{head} responds to treatment with {tail}",
+    "{head} shows no response to treatment with {tail}"
+  ],
+  "default": [
+    "{head} has {relation} of {tail}",
+    "{head} does not have {relation} of {tail}"
+  ]
+}

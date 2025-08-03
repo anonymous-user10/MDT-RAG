@@ -1,0 +1,10 @@
+As an AI researcher, I need to evaluate your medical capabilities.
+You will be provided with a medical question.
+
+The medical question you need to answer is:
+[Start of Question]
+{query_str}
+[End of Question]
+
+First, you need to analyze the patient's symptoms and medical test information one by one, explaining their meanings. Then, through differential diagnosis, determine the patient's condition. Next, provide the answer to the question and the rationale considering the background information. Finally, analyze more possible scenarios according to the background information. 
+

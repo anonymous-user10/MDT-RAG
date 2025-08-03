@@ -1,0 +1,20 @@
+Below I will provide you with an introduction to the decision tree structure and an example of a decision tree. The format of the triple relationships in this decision tree is incorrect, specifically it does not conform to the specified format. However, the content does not need to be modified. The introduction to the decision tree structure is: 
+
+As an intuitive hierarchical decision-making tool, the decision tree makes the next condition judgment or decision based on the outcomes of different condition judgments. It can be used for disease diagnosis, treatment selection, and drug analysis. Now we introduce the multi-way medical decision tree, which starts at the root node and branches step by step through conditional judgments. Non-leaf nodes are condition nodes, while leaf nodes are decision nodes. Non-leaf nodes contain multiple conditions that can be judged, namely triple relationships. Based on these relationships, different child nodes can be selected, thereby generating new branches. For a leaf node, all its triple relationships must be satisfied. In this case, the triple relationships actually represent the final decision. All nodes contain a "select_condition" item, which indicates which conditions of the parent node are satisfied. In a medical decision tree, the parent node has triple relationships that can be judged. Satisfying different triple relationships leads to different decisions and, consequently, different child nodes. For non-leaf nodes, their "children" represent a list of child nodes. The structure of all nodes is the same. For leaf nodes, this field is an empty list.
+The conditions that can be judged within non-leaf nodes are represented in the form of triple tuples, namely "head entity," "relationship," and "tail entity." The head entity is often a type of patient, a disease, a diagnostic test, a drug, etc. 
+Each node in a decision tree can be represented as:
+{{
+    "is_leaf": "0" / "1", # "0" indicates that the node is not a leaf node but a condition node, while "1" indicates that it is a leaf node. 
+    "triples": {{
+        "0": [head entity0, relation0, tail entity0],
+        "1": [head entity1, relation1, tail entity1],
+        ...
+    }}, # The extracted triple relationships. Note that these relationships must be conditions that can be judged as true or false, so that the corresponding child nodes can be selected based on which conditions are met. For leaf nodes, all triple relationships should be true, thereby preventing the creation of new branches.
+    "select_condition": "", # Indicates which triple relationships of the parent node are satisfied by this node. Use logical condition expressions with logical words "and", "or", "not", and parentheses. For example, if this node satisfies the parent node's conditions "0" and "3", it should be "0and3". If it satisfies "1" and "2" or only "3", it should be "(1and2)or3". If selecting this node requires the parent node's condition "1" to be true while condition "2" is false, it can be expressed as "1andnot2". Only when explicitly requiring a condition to be false can the "not" logic be used. For a root node, this field is an empty string ""; for non-root nodes, this field must not be empty.
+    "children": [child_node1,child_node2...], # The decision tree is represented through nesting. In the non-leaf nodes of the decision tree, the `children` field represents its child nodes, and all nodes have the same structure. For leaf nodes, the `children` field is an empty list, indicating that they have no child nodes.
+}}
+Overall, our decision tree can be represented through the nesting of the nodes described above.
+
+The example of the decision tree is:  {tree}
+
+Please only reply with the corrected decision tree, without any additional explanations.

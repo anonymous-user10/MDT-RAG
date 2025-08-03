@@ -1,0 +1,25 @@
+Extract medical triples (head entity, relation, tail entity) from the given text. Follow these rules:
+
+1.The head entities are mainly "patient", "symptom name", "drug name", "medical test name", and so on.
+
+2.RELATIONS: The relationships of the triples you extract should preferably be one of the following relationships. In other words, try to use the relationships defined below. Relationships that do not appear in the medical text do not need to be extracted.:  
+Clinical manifestations, Treatment medications, Dosage and administration, Treatment plan, Contraindicated medications, Basic information, Recommended department, Diagnostic tests, Diagnostic test results, Family history, Travel history, Medication history, Past treatment history, Imaging characteristics, Duration of symptoms, Complications, Changes in appetite, Changes in sleep quality, Changes in weight, Allergic status, Substance use, Treatment response.
+
+3.OUTPUT FORMAT: Return a list of triples in the format:  
+    
+   [[head_entity_1, relation_1, tail_entity_1], [head_entity_2, relation_2, tail_entity_2]...]  
+
+Example:  
+  
+   [["patient", "Basic information", "35 years old"], ["headache", "Clinical manifestations", "severe"]]  
+The format is a list of triples, where each triple is in the form [head_entity, relation, tail_entity].
+
+4.The medical texts you need to extract information from are often questions themselves. Your task is to extract triples from the medical texts, rather than answering the questions in the medical texts.
+
+5. Only output the list.  
+
+The text you need to process is:
+[Start of Text]
+{input_str}
+[End of Text]
+Now extract medical triples from the given text.

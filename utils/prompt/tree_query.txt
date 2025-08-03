@@ -1,0 +1,6 @@
+Below, I will provide you with some medical rules and a question. Please refer to these medical rules and your own knowledge to answer the question.
+{context_str}
+Answer the question using both the medical rules and your own knowledge. Note that the medical rules might be unrelated to the question. If it is unrelated, respond using your own knowledge. The question you need to answer is:
+{query_str}
+You need to combine medical rules to analyze the patient's condition and provide a detailed analysis. Medical differential diagnosis not only requires analyzing the patient's condition but also comparing similar situations. If the medical rules are consistent with the patient's condition, please analyze why they are consistent and what results can be obtained based on this. If they are not consistent, please analyze and compare, and provide the process of elimination. When you need to refer to the given medical decision rules, you should briefly introduce the rules you are referring to, which makes your answer more understandable.
+Please provide your answer.

@@ -1,0 +1,24 @@
+You will be given a medical decision tree below. Analyze its content. If it mentions any diseases or symptoms, list them. If none are mentioned, reply only with 'None'. You only need to provide the name of the disease or symptom, or None, without any explanation or additional information. Please reply in English.
+
+First, I will give you a few examples.  
+[First example begins]  
+IF: ( Patient has Clinical manifestations of localized pain upon palpation of medial epicondyle ) AND ( Patient has Clinical manifestations of history of repetitive hand/wrist flexion ) : \n    Golfer's elbow has Treatment plan of nonsteroidal anti-inflammatories\n    Golfer's elbow has Treatment plan of rest\n
+[First example ends]  
+The answer for the first example is:  
+Localized pain upon palpation of medial epicondyle.
+Repetitive hand/wrist flexion
+Golfer's elbow
+
+[Second example begins]  
+IF: ( Patient has Basic information of pediatric age ) : \n    IF: ( Patient has Basic information of weight 5-10 kg ) : \n        Omeprazole has Dosage and administration of 5 mg daily\n    IF: ( Patient has Basic information of weight 10-20 kg ) : \n        Omeprazole has Dosage and administration of 10 mg daily\n    IF: ( Patient has Basic information of weight >20 kg ) : \n        Omeprazole has Dosage and administration of 20 mg daily.
+[Second example ends]  
+The answer for the second example is:  
+None
+
+The decision tree you need to process is:
+
+[Decision tree begins]
+{tree}
+[Decision tree ends]
+
+Your reply:

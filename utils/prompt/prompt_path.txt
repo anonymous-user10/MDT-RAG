@@ -1,0 +1,2 @@
+Below are clinical decision rules. Each rule has multiple groups of conditions and a final conclusion. Each group contains several conditions. If at least one condition in a group is met, the group is considered satisfied. When all groups are satisfied, the conclusion is reached.
+

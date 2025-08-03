@@ -1,0 +1,26 @@
+The following is a segment of patient information, including the patient's symptoms, the diagnosed disease, and other supplementary background information. Please extract the names of the most important diseases or symptoms from it. 
+Please extract according to the requirements below.
+1.Prioritize extracting disease names first; extract symptom names only if no valid disease names exist
+2.Extract at least 1 and up to 4 names in total
+3.Return only the extracted disease/symptom names as a plain list (no explanations or additional content)
+I will give you two examples.
+Example 1:
+[Start of Example 1]
+Tobacco use disorder, Cellulitis and abscess of upper arm and forearm, Polycystic ovaries, Cellulitis and abscess of hand, except fingers and thumb, Opioid abuse, continuous, Other tenosynovitis of hand and wrist, Alcohol abuse, unspecified
+[End of Example 1]
+The extraction result of Example 1:
+Cellulitis and abscess of hand.\ntenosynovitis.\nPolycystic ovaries.\n
+Example 2:
+[Start of Example 2]
+Contracture, left hand, Overexertion from prolonged static or awkward postures, initial encounter, Unspecified place in other specified residential institution as the place of occurrence of the external cause, Contracture, right hand, Displaced supracondylar fracture without intracondylar extension of lower end of left femur, initial encounter for closed fracture, Unspecified intellectual disabilities, Unspecified convulsions
+[End of Example 2]
+The extraction result of Example 2:
+Contracture.\nDisplaced supracondylar fracture without intracondylar extension of lower end of left femur.\nConvulsions.\nintellectual disabilities.\n
+The patient information you need to process is:
+{diagnosis}
+The results of your extraction are:
+
+
+
+
+

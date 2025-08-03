@@ -1,0 +1,16 @@
+Below, you will be given a statement and a medical guideline. First, you need to determine whether the statement is the first sentence of the guideline or the title of the guideline. If it is the title, reply with the statement itself (i.e., the original title). If the statement is not the title, generate a title for the guideline (no more than 12 words) and reply with that title.
+
+Only reply with the original title or the generated title—do not include any additional content.
+
+Statement:
+[Start of statement]
+{statement}
+[End of statement]
+
+Guideline:
+[Start of guideline]
+{guideline}
+[End of guideline]
+
+Please provide your answer. 
+The title of the guideline is:

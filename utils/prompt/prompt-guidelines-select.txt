@@ -1,0 +1,18 @@
+Please rate medical texts (on a scale of 1 to 5) according to the following rules:
+
+5 points: It also includes the following contents:
+- Compare two or more similar diseases
+- Explain why this diagnosis was chosen
+- Provide specific treatment methods
+
+4 points: There are disease comparisons and treatment methods, but specific causes or drug dosages are lacking
+
+3 points: The name and symptoms of the disease were mentioned, but no comparison was made with other possible diseases
+
+2 points: Only stating that there is a disease without explanation, or only offering general advice (such as "Seek medical attention promptly")
+
+1 point: No mention of any disease diagnosis-related content at all, or only health science popularization knowledge (such as disease definitions, preventive measures)
+
+【 Output Format
+Only integers within the range [1-5] must be returned. Any punctuation or text is prohibited
+The medical text you need to handle is:

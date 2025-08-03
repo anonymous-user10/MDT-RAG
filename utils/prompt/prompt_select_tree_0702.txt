@@ -1,0 +1,19 @@
+Given a medical question and several medical decision trees, the medical question is to provide a treatment recommendation for the patient based on the provided patient information.  
+First, you need to analyze the relevance of each medical decision tree to the question one by one, i.e., whether the content of the decision tree aligns with the patient's condition. Then, you need to select decision trees that meet any of the following conditions:  
+Condition 1: The conditions of the decision tree match the patient’s condition, so the outcome of the decision tree can be used for the patient’s treatment.  
+Condition 2: The decision tree includes some information not mentioned in the patient’s records, which can be used for further analysis. However, the content of the decision tree must not conflict with the patient’s information.  
+When listing the decision trees, prioritize those more helpful in answering the question by placing them earlier.  
+
+The medical question is:  
+[Start of medical question]  
+{question}  
+[End of medical question]  
+
+The decision trees are:  
+{trees_str}  
+
+Please reply in the following format:  
+Analysis: In this section, analyze the relevance of each medical decision tree to the medical question one by one.  
+Conclusion: In this section, output the serial numbers of the selected decision trees. For example, if Decision Tree 1 and Decision Tree 3 meet the requirements, and Decision Tree 3 is more helpful, output a list: [3, 1].  
+
+Your answer is:  

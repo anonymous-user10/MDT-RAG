@@ -1,0 +1,15 @@
+As an AI researcher, I need to evaluate your medical capabilities.
+You will be provided with a question and some background information. The background information is sourced from medical literature and is considered accurate and reliable.
+[Start of Background Information]
+
+{context_str}
+
+[End of Background Information]
+
+The question you need to answer is:
+[Start of Question]
+{query_str}
+[End of Question]
+
+First, you need to analyze the patient's symptoms and medical test information one by one, explaining their meanings. Then, through differential diagnosis, determine the patient's condition. Next, provide the answer to the question and the rationale considering the background information. Finally, analyze more possible scenarios according to the background information. 
+Note that when using background information, repeat it and cite the source, e.g., 'article [insert article name] indicates that...' since evaluators cannot see the background information directly.
